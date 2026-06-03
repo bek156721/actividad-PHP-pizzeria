@@ -31,6 +31,27 @@
             <h3>Resumen de tu Orden:</h3>
             
             <!-- Aquí va el PHP para mostrar los datos recibidos -->
+            <?php
+                $nombre = $_POST["nombre"];
+                $correo = $_POST["correo"];
+                $cantidad_pizzas = $_POST["cantidad"];
+                $tipo_pizza = $_POST["tipo_pizza"];
+                $picante = $_POST["picante"];
+                $fecha = $_POST["fecha_entrega"];
+                $color_caja = $_POST["color_caja"];
+                $tamano = $_POST["tamano"];
+                $extras = $_POST["extras"];
+                $instrucciones_entrega = $_POST["instrucciones"];
+                echo "<p> Cliente: $nombre </p>";
+                echo "<p> Correo: $correo </p>";
+                echo "<p> Cantidad de pizzas: $cantidad_pizzas </p>";
+                echo "<p> Sabor de la pizza: $tipo_pizza </p>";
+                echo "<p> Cantidad de picantes: $picante </p>";
+                echo "<p> Fecha de entrega: $fecha</p>";
+                echo "<p> Color de la caja: $color_caja </p>";
+                echo "<p> Tamaño: $tamano </p>";
+                echo "<p> Instrucciones de entrega: $instrucciones_entrega </p>";
+            ?>
             
         </div>
         
