@@ -16,7 +16,7 @@
         </div>
         <div class="nav-right">
             <div class="profile-section">
-                <img src="img/perfil_default.jpg" alt="Perfil" class="profile-pic">
+                <img src="img/perfil_usuario.jpg" alt="Perfil" class="profile-pic">
                 <label for="foto_perfil" class="btn-editar">Editar Perfil</label>
                 <input type="file" name="foto_perfil" id="ipt-foto_perfil" accept="image/png, image/jpeg" class="hidden-input">
             </div>
@@ -42,6 +42,7 @@
                 $tamano = $_POST["tamano"];
                 $extras = $_POST["extras"];
                 $instrucciones_entrega = $_POST["instrucciones"];
+                $pais = $_POST["pais"];
                 echo "<p> Cliente: $nombre </p>";
                 echo "<p> Correo: $correo </p>";
                 echo "<p> Cantidad de pizzas: $cantidad_pizzas </p>";
@@ -50,6 +51,15 @@
                 echo "<p> Fecha de entrega: $fecha</p>";
                 echo "<p> Color de la caja: $color_caja </p>";
                 echo "<p> Tamaño: $tamano </p>";
+                echo "<p> País: $pais </p>";
+                //var_dump($extras); es para ver que tipo de dato regresa
+                //foreach recorre cada elemento del arreglo 
+                echo "<ul>";
+                foreach($extras as $extra)
+                {
+                    echo "<li>". $extra ."</li>";
+                }
+                echo "</ul>";
                 echo "<p> Instrucciones de entrega: $instrucciones_entrega </p>";
             ?>
             

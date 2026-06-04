@@ -15,7 +15,7 @@
         <div class="nav-right">
             <div class="profile-section">
                 <!-- Aquí va el PHP para la imagen de perfil -->
-                <img src="img/perfil_default.jpg" class="profile-pic">
+                <img src="iimg/perfil_usuario.jpg" class="profile-pic">
             </div>
         </div>
     </nav>
@@ -27,12 +27,11 @@
 
         <!-- Aquí va el PHP para mostrar la foto de perfil actual en grande-->
 
+
         </div>
         <!-- otro atributo? -->
-        <form action="guardar.php" method="POST">
-
+        <form action="guardar.php" method="POST" enctype"multipart/form-data">
             <input type="file" name="foto_perfil" id="ipt-foto_perfil" accept="image/png, image/jpeg">
-
             <button type="submit" class="btn-submit">Cambiar foto</button>
         </form>
     </div>

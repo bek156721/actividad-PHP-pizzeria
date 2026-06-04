@@ -28,7 +28,7 @@
             <div class="nav-right">
                 <div class="profile-section">
                     <!-- Aquí va el PHP para cambiar la foto de perfil -->
-                    <img src="img/perfil_default.jpg" class="profile-pic">
+                    <img src="img/perfil_usuario.jpg" class="profile-pic">
                     <a href="perfil.php" class="btn-editar">EditarPerfil</a>
                 </div>
             </div>
@@ -125,7 +125,9 @@
                 </div>
 
                 <!-- Aquí va otro php (Oculto, wuuu) -->
-                
+                <?php 
+                    echo "<input type = 'hidden' value = '$pais' name = 'pais'>";
+                ?>
                 <button type="submit" class="btn-submit">¡Pedir mi Pizza!</button>
             </form>
         </main>
